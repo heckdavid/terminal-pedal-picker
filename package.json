@@ -1,7 +1,6 @@
 {
   "name": "terminal-pedal-picker",
   "version": "1.0.0",
-  "description": "## Description",
   "main": "index.js",
   "scripts": {
     "lint": "eslint *.js"
