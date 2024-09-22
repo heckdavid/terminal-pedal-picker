@@ -2,14 +2,14 @@
 
 ## Description
 
-### A user can navigate the prompts to get a recommendation on a guitar pedal for a specific guitar effect category.
+A user can navigate the prompts to get a recommendation on a guitar pedal for a specific guitar effect category.
 
 
 ## Built With    
 
-* ### HTML
-* ### CSS
-* ### Javascript
+* HTML
+* CSS
+* Javascript
 
 
 ## Demo  
@@ -27,4 +27,4 @@
 
 ## Acknowledgments  
 
-### Jared Wilcurt - Here is a link to Jared's [work](https://github.com/thejaredwilcurt).
+Jared Wilcurt - Here is a link to Jared's [work](https://github.com/thejaredwilcurt).
