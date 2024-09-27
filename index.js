@@ -1,25 +1,15 @@
 // Commands //
-begin = [
-'Categories',
-'Dry Effects View dry effects',
-'Wet Effects View wet effects'
-];
+const begin ='effects See my favorite wet effects';
 
-categories = [
-'Categories Choose between either dry effects or wet effects'
-];
-
-dryEffects = [
-'Volume',
-'Tuner',
-'Compression',
-'Pitch',
-'Drives',
-];
-
-wetEffects = [
+const effects = [
 'Modulation',
 'Delay',
 'Reverb'
 ];
+
+effects.Modulation = 'Boss Super Chorus CH1';
+
+effects.Delay = 'Strymon Timeline';
+
+effects.Reverb = 'Strymon Bigsky';
 
