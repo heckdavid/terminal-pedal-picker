@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "lint": "eslint *.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "David",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
