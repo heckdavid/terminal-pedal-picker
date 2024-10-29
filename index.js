@@ -5,9 +5,8 @@ import inquirer from 'inquirer';
 async function dryCollectFeedback() {
         console.log("What are your favorite dry effect for praise and worship?\n");
 
-
     const dryEffectQuestions = [
-        
+
         {
             type: 'list',
             name: 'volume',
@@ -50,7 +49,6 @@ async function dryCollectFeedback() {
             message: 'What is your favorite distortion pedal?',
             choices: ['Electronic Audio Experiments Longsword', 'Revv G3'],
         },
-        
         {
             type: 'list',
             name: 'fuzz',
@@ -62,12 +60,11 @@ async function dryCollectFeedback() {
             name: 'octaveFuzz',
             message: 'What is your favorite octave fuzz pedal?',
             choices: ['MXR Poly Blue Octave','Walrus Audio Kangra Filter Fuzz'],
-        }
-        
-    ]
-    
+        },
+    ];
+
     const dryAnswers = await inquirer.prompt(dryEffectQuestions);
-    
+
     // Dry effect //
     console.log("\nChoose your favorite dry effect in each category!");
     console.log(`Your favorite volume pedal: ${dryAnswers.volume}`);
@@ -78,14 +75,14 @@ async function dryCollectFeedback() {
     console.log(`Your favorite distortion pedal: ${dryAnswers.distortion}`);
     console.log(`Your favorite fuzz pedal: ${dryAnswers.fuzz}`);
     console.log(`Your favorite octave fuzz pedal: ${dryAnswers.octaveFuzz}`);
-    }
+  }
 
     // Wet effects //
     async function wetCollectFeedback() {
     console.log("What are your favorite wet effect for praise and worship?\n");
 
     const wetEffectQuestions = [
-        
+
         {
             type: 'list',
             name: 'delay',
@@ -95,7 +92,6 @@ async function dryCollectFeedback() {
     ]
   const wetAnswers = await inquirer.prompt(wetEffectQuestions);
         console.log(`Your favorite delay pedal: ${wetAnswers.delay}`);
-
     }
 
 
@@ -104,14 +100,14 @@ dryCollectFeedback();
 wetCollectFeedback();
 
 // Trying out promises 10-28-24 //
-/* const dryCollectFeedbackPromise = new Promise((resolve, reject) => {  
-    let dryEffectQuestions = true;  
+/* const dryCollectFeedbackPromise = new Promise((resolve, reject) => {
+    let dryEffectQuestions = true;
 
-    if(dryEffectQuestions) {    
-        resolve('Selected');  
-    } else {    
-        reject('Not selected');  
-    } 
+    if(dryEffectQuestions) {
+        resolve('Selected');
+    } else {
+        reject('Not selected');
+    }
 });
 dryCollectFeedbackPromise.then((message) => {
     console.log(message);
